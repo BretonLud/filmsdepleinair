@@ -1,0 +1,210 @@
+.sticky {
+  background: $secondaryColor;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 114px;
+  font-size: 1.4rem;
+  @media screen and (max-width: 767.98px){
+    justify-content: space-between;
+  }
+}
+
+.menu__logo{
+  width: 200px;
+}
+
+.menu__links{
+  display: flex;
+  margin-bottom: 0;
+}
+
+.menu__link{
+  padding: 0 10px;
+}
+
+.menu__link > a{
+  text-decoration: none;
+  color: $mainColor;
+}
+
+.burger{
+  display: none;
+}
+
+.menu__ideisLogo{
+  width: 150px;
+}
+
+
+.scrolled-down {
+  background-color: white;
+  position: sticky;
+  transition: all .2s ease-in;
+  top: 0;
+}
+
+.scrolled-up {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  transition: all .5s ease-out;
+}
+
+@media screen and (max-width: 1366px){
+  .scrolled-up {
+    background-color: white;
+    position: sticky;
+  }
+
+  .menu__logo{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 960px){
+  .menu{
+    height: 80px;
+  }
+
+  .menu__links{
+    overflow: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: $secondaryColor;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    z-index: 100;
+    visibility: collapse;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: block;
+    background-color: white;
+  }
+
+  .menu__visibility{
+    visibility: visible;
+  }
+
+  .menu__show .menu__links{
+
+  }
+
+  .menu__link{
+    margin: 1px 0;
+    transform: translateX(101%);
+  }
+
+  .menu__show .menu__link{
+    transform: translateX(0);
+  }
+
+  .menu__link > a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    transition: all .4s ease-in-out;
+  }
+
+  .menu__link > a:hover{
+    padding-left: 2rem;
+    letter-spacing: 5px;
+  }
+
+  //menu burger
+  .burger{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu__show .bar{
+    width: 0;
+    background: transparent;
+  }
+
+  .bar{
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: $secondaryColor;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+  }
+
+  .bar::before, .bar::after{
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: $secondaryColor;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+  }
+
+  .bar::before{
+    transform: translateY(-12px);
+  }
+
+  .menu__show .bar::before{
+    transform: rotate(45deg);
+  }
+
+  .bar::after{
+    transform: translateY(12px);
+  }
+
+  .menu__show .bar::after{
+    transform: rotate(-45deg);
+  }
+
+  .menu__show .menu__link--first{
+    transition: all 0.5s ease-out;
+  }
+
+  .menu__show .menu__link--second{
+    transition: all 0.6s ease-out;
+  }
+
+  .menu__show .menu__link--third{
+    transition: all 0.7s ease-out;
+  }
+
+  .menu__show .menu__link--four{
+    transition: all 0.8s ease-out;
+  }
+
+  .menu__show .menu__link--fifth{
+    transition: all 0.9s ease-out;
+  }
+}
+
+@media screen and (min-width: 960.1px){
+
+  .menu__link > a::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: $mainColor;
+    transition: width .4s;
+  }
+
+  .menu__link:hover > a::after{
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.contact textarea{
+  height: 150px !important;
+}
+
+.contact button{
+  background-color: $thirdColor;
+  color: $secondaryColor;
+}
+
+.contact button:hover{
+  background-color: $mainColor;
+}

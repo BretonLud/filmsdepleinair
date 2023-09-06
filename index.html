@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez un monde de découvertes avec notre collection exceptionnelle de produits.
+        Des innovations passionnantes aux classiques intemporels, plongez dans une expérience unique.
+        Découvrez une sélection soigneusement conçue pour répondre à tous vos besoins.
+        Rejoignez-nous dès aujourd'hui et découvrez un nouveau niveau de qualité et de style.">
+    <script src="dist/main.js" defer></script>
+    <link rel="stylesheet" href="dist/main.css">
+    <title>Films de Plein Air</title>
+</head>
+<body id="accueil">
+<header class="scrolled-up z-3 w-100">
+    <nav class="menu container">
+
+        <a href="#accueil">
+            <img class="menu__logo" src="assets/images/logo.png" alt="logo film de plein air">
+        </a>
+
+        <ul class="menu__links">
+            <li class="menu__link menu__link--first">
+                <a href="#accueil">Accueil</a>
+            </li>
+            <li class="menu__link menu__link--second">
+                <a href="#nous">Qui nous sommes ?</a>
+            </li>
+            <li class="menu__link menu__link--third">
+                <a href="#actualites">Actualités</a>
+            </li>
+            <li class="menu__link menu__link--four">
+                <a href="#films">Films</a>
+            </li>
+            <li class="menu__link menu__link--fifth">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <button class="burger" title="burger menu">
+            <span class="bar"></span>
+        </button>
+    </nav>
+</header>
+<section id="slider">
+    <div id="carouselFilms" class="carousel slide" data-bs-ride="carousel" data-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselFilms" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFilms" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFilms" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active bg_first">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Black Widow</h5>
+                    <p class="text-justify">Lorsqu'un complot dangereux en lien avec son passé ressurgit,
+                        Natasha Romanoff,
+                        alias Black
+                        Widow, doit y faire face.
+                        Tandis qu'elle se fait poursuivre par une force qui ne s'arrête devant rien,
+                        Natasha confronte des liens brisés ainsi que les conséquences de son passé en tant qu'espionne dans un temps avant qu'elle fasse partie des Avengers.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item bg_second">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Grand Turismo</h5>
+                    <p class="text-justify">
+                        La jeune Jann Mardenborough meurt d'envie d'être pilote de course,
+                        mais n'a pas les moyens financiers de faire partie du sport d'élite.
+                        C'est pourquoi il n'a appuyé sur l'accélérateur que dans le jeu vidéo Gran Turismo et a connu un énorme succès.
+                        Alors qu'il remporte de plus en plus de compétitions,
+                        il a enfin la chance de devenir pilote professionnel sur du vrai asphalte.
+                        Cependant, le circuit automobile est tout sauf bienveillant face à la nouvelle compétition.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item bg_third" >
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Barbie</h5>
+                    <p class="text-justify">Barbie, qui vit à Barbie Land, est expulsée du pays pour être loin d'être une poupée à
+                        l'apparence parfaite, n'ayant nulle part où aller, elle part pour le monde humain et cherche le vrai bonheur.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFilms" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFilms" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<section id="nous" class="us mt-5 mb-5">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="text-center mb-5">Qui nous sommes ?</h2>
+                <p>
+                    L'association <span class="fw-bold">"Les films de plein air"</span> a été créer pour faire découvrir aux
+                    grand public des films d'auteur.
+                    Cette année l'association a obtenue l'autorisation de projeter au parc Monceau Paris des divers séléctions de film.
+                </p>
+                <p>
+                    L'évènement aura lieu le 5 au 8 août 2020, chaque soir  de   18 h à minuit.
+                </p>
+                <p>
+                    L'accès aux projection est totalement gratuit et ouvert à tous.
+                    Cependant, pour estimer les nombres de personnes présentes chaque soir et afin d'apporter des améliorations chaque année,
+                    une pré-réservation sera possible.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section id="actualites" class="bg-white">
+    <div class="container py-5">
+        <h2 class="text-center mb-5 timeline-title">Actualités</h2>
+        <div class="main-timeline">
+            <div class="timeline left">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h3>2024</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
+                            dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline right">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h3>2023</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
+                            dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline left">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h3>2022</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
+                            dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline right">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h3>2021</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                            mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
+                            dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="films" class="mt-5 mb-5 container films">
+    <h2 class="text-center mb-5">Nos films</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Black Widow</h2>
+                </div>
+                <div class="card-body">
+                    <img src="assets/images/Black_Widow.jpg" alt="Black Widow">
+                    <div class="time">
+                        <h5 class="text-center mt-3 mb-3">Dates et horaires des séances :</h5>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Mardi 6 août 2024</h6>
+                            <p name="horaire">21h45</p>
+                        </div>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Jeudi 8 août 2024</h6>
+                            <p name="horaire">21h45</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-action btn-reservation" data-bs-toggle="modal"
+                            data-bs-target="#reservation" data-name="Black Widow">
+                        Réserver
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Grand Turismo</h2>
+                </div>
+                <div class="card-body">
+                    <img src="assets/images/Grand_Turismo.jpeg" alt="Grand Turismo">
+                    <div class="time">
+                        <h5 class="text-center mt-3 mb-3">Dates et horaires des séances :</h5>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Lundi 5 août 2024</h6>
+                            <p name="horaire">21h45</p>
+                        </div>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Jeudi 8 août 2024</h6>
+                            <p name="horaire">21h45</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-action btn-reservation" data-bs-toggle="modal"
+                            data-bs-target="#reservation" data-name="Grand Turismo">
+                        Réserver
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Barbie</h2>
+                </div>
+                <div class="card-body">
+                    <img src="assets/images/barbie.jpg" alt="Barbie">
+                    <div class="time">
+                        <h5 class="text-center mt-3 mb-3">Dates et horaires des séances :</h5>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Mardi 6 août 2024</h6>
+                            <p name="horaire">18h00</p>
+                        </div>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Jeudi 8 août 2024</h6>
+                            <p name="horaire">20h00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-action btn-reservation" data-bs-toggle="modal"
+                            data-bs-target="#reservation" data-name="Barbie">
+                        Réserver
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Les As de la Jungle 2</h2>
+                </div>
+                <div class="card-body">
+                    <div class="time">
+                        <img src="assets/images/as_jungle.jpg" alt="Les As de la Jungle 2">
+                        <h5 class="text-center mt-3 mb-3">Dates et horaires des séances :</h5>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Lundi 5 août 2024</h6>
+                            <p name="horaire">18h00</p>
+                        </div>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Mercredi 7 août 2024</h6>
+                            <p name="horaire">20h00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-action btn-reservation" data-bs-toggle="modal"
+                            data-bs-target="#reservation" data-name="Les As de la Jungle 2">
+                        Réserver
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Miraculous</h2>
+                </div>
+                <div class="card-body">
+                    <img src="assets/images/miraculous.jpg" alt="Miraculous">
+                    <div class="time">
+                        <h5 class="text-center mt-3 mb-3">Dates et horaires des séances :</h5>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Mardi 6 août 2024</h6>
+                            <p name="horaire">20h00</p>
+                        </div>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Mercredi 7 août 2024</h6>
+                            <p name="horaire">18h00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-action btn-reservation" data-bs-toggle="modal"
+                            data-bs-target="#reservation" data-name="Miraculous">
+                        Réserver
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Spider-Man</h2>
+                </div>
+                <div class="card-body">
+                    <img src="assets/images/spiderman.jpg" alt="Spider Man: Across The Spider-Verse">
+                    <div class="time">
+                        <h5 class="text-center mt-3 mb-3">Dates et horaires des séances :</h5>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Lundi 5 août 2024</h6>
+                            <p name="horaire">20h00</p>
+                        </div>
+                        <div class="d-flex justify-content-around time-date">
+                            <h6 name="date">Mercredi 7 août 2024</h6>
+                            <p name="horaire">21h45</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-action btn-reservation" data-bs-toggle="modal"
+                            data-bs-target="#reservation" data-name="Spider-Man : Across The Spider-Verse">
+                        Réserver
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal réservation-->
+    <div class="modal fade" id="reservation" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-black">Formulaire de réservation</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <form action="" class="contact">
+
+                            <div class="form-floating mb-3">
+                                <input type="text" id="reservation_film" name="reservation_film" class="form-control"
+                                       placeholder="Email" required="required" disabled >
+                                <label for="reservation_film">Film</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" id="reservation_email" name="reservation_email" class="form-control"
+                                       placeholder="Email" required>
+                                <label for="reservation_email">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" name="reservation_name" id="reservation_name" class="form-control"
+                                       placeholder="Nom et prénom" required>
+                                <label for="reservation_name">Nom et prénom</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select  name="reservation_time" id="reservation_time" class="form-select"
+                                         required><option selected>Choisir votre séance</option>
+                                </select>
+                                <label for="reservation_time">Séance</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" min="1" max="15" required="required" class="form-control"
+                                       placeholder="Nombres de personnes" id="reservation_number" value="">
+                                <label for="reservation_number">Nombre de personnes</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-action">Finaliser la réservation</button>
+                            </div>
+
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="contact" class="container mt-5 mb-5">
+    <h2 class="text-center text-white fw-bold mb-5">Contact</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <form action="" class="contact">
+                <h3 class="mb-3 text-white">Formulaire de contact</h3>
+                <div class="form-floating mb-3">
+                    <input type="email" id="contact_email" name="contact_email" class="form-control"
+                           placeholder="Email" required>
+                    <label for="contact_email">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="contact_lastname" id="contact_lastname" class="form-control"
+                           placeholder="Nom de famille" required>
+                    <label for="contact_lastname">Nom</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="contact_firstname" id="contact_firstname" class="form-control"
+                           placeholder="Prénom" required>
+                    <label for="contact_firstname">Prénom</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea name="contact_message" id="contact_message" class="form-control"
+                              placeholder="Écriver votre message" required></textarea>
+                    <label for="contact_message">Message</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+        <div class="col">
+            <h3 class="mb-3 text-white" >Carte</h3>
+            <div id="map">
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="mt-5 mb-3">
+    <div class="text-center">
+        <p class="text-white">Copyright Ludovic Breton / OpenClassRooms Projet 3</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
