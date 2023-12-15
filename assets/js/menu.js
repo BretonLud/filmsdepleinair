@@ -37,6 +37,7 @@ function scrollEvent()
     }
 
     window.addEventListener('scroll', () => {
+
         currentScrollPosition = window.scrollY
 
         if (currentScrollPosition > 0) {
